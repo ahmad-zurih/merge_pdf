@@ -7,7 +7,7 @@ command line interface.
 
 >> Python merge_pdf.py pdf_file1.pdf pdf_file2.pdf (any number of pdf files)
 
-###### Optional argument: add file name
+###### Optional argument: add output file name
 
 >> Python merge_pdf.py pdf_file1.pdf pdf_file2.pdf --file example.pdf
 
