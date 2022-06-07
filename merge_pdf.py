@@ -1,5 +1,6 @@
 import argparse, sys, random
 from PyPDF2 import PdfFileMerger, PdfFileReader
+from typing import List
 
 def create_argument_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description='program that merge pdf files into one file')
@@ -14,7 +15,7 @@ def create_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def merge_pdf(pdf_files, out_file=f"output{random.randint(10000,99999)}.pdf"):
+def merge_pdf(pdf_files: List, out_file=f"output{random.randint(100000,999999)}.pdf") -> None:
     """
     function that takes multples pdf files and merge them into one pdf file in order
     """
